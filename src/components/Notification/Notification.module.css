@@ -1,0 +1,24 @@
+.container {
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 1rem;
+  position: fixed;
+  top: 20%;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+}
+
+.success {
+  border: #3ebb5f 1px solid;
+  background-color: #ebf8ee;
+}
+
+.failed {
+  border: red 1px solid;
+  background-color: #fbeeea;
+}

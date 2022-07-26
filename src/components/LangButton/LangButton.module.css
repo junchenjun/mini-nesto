@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    font-size: 14px;
+    display: inline-block;
+    width: 40px;
+    height: 27px;
+    line-height: 27px;
+    border-width: 1.5px;
+    border-style: solid;
+    text-align: center;
+    border-color: #183770;
+    color: #183770;
+    transition: all 0.2s;
+    cursor: default;
+    margin: 0 -1.5px -1.5px 0;
+    box-sizing: border-box;
+}
+
+.left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.selected {
+    opacity: 0.2;
+}
+
+.button:not(.selected):hover {
+    background-color: #FFD200;
+    cursor: pointer;
+}

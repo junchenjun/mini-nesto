@@ -1,0 +1,38 @@
+.container {
+    cursor: pointer;
+    background: #f9423a;
+    border:#f9423a 2px solid;
+    height: 45px;
+    min-width: 50px;
+    border-radius: 24px;
+    padding: 0 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(to left, #f9423a 50%, #FFD200 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+
+.container.ghost {
+    color: #f9423a;
+    background: linear-gradient(to left, white 50%, #FFD200 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+
+.container.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.container:not(.disabled):hover {
+    color: #f9423a;
+    background-position: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .container { 
+        height: 35px;
+    }
+}
